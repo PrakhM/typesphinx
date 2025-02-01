@@ -1,0 +1,66 @@
+@font-face 
+{
+    font-family: 'Egyptian';
+    src: url('EgyptianNights-yAOV.ttf') format('truetype');
+}
+
+body 
+{
+    width: 100vw;
+    height: calc(100vw * (4065 / 1878));
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+}
+
+h1 
+{
+    margin-top: 150;
+    text-align: center;
+    font-size: 100;
+    font-family: 'Egyptian', sans-serif;
+    color: #0B2D52;
+}
+
+button
+{
+    background: transparent;
+    color: #0B2D52; /* Dark brown for text */
+    padding: 15px 30px;
+    border: 5px solid #0B2D52; /* Ancient frame */
+    border-radius: 0px; /* Slight rounding */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    transform: skew(-20deg);
+    font-family:'Egyptian',sans-serif;
+    font-size:x-large;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+    margin-bottom: 20px;
+    /*display: inline-block;*/
+}
+
+button:hover 
+{
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: skew(-20deg) scale(1.05);
+}
+
+button:active
+{
+    color: #AD200E;
+    border: 5px solid #AD200E;
+}
+
+a {
+    display: inline-block;
+    margin-right: 20px; /* Adds space between buttons */
+}
